@@ -5,6 +5,7 @@
 body {
     font-family: "Arial", "Helvetica", sans-serif;
     line-height: 1.5;
+    margin: 0 auto;
 }
 
 legend {
@@ -55,17 +56,20 @@ input[type="button"] {
 
 
 /*mediaqueries*/
-@media screen and (max-width: 25rem) {
+@media screen and (min-width: 25rem) {
 
     input[type="button"]{
         width: auto;
         padding: 0 2rem;
     }
+    
 }
 
 
-@media screen and (min-width: 25rem) and (max-width: 40rem) {
-
+@media screen and (min-width: 40rem) {
+    body{
+        max-width: 50rem;
+    }
     .fname,
     .email {
         width: 45%;
@@ -85,48 +89,3 @@ input[type="button"] {
          width: auto;
     }
 }
-
-@media screen and (min-width: 40rem) and (max-width: 50rem) {
- 
-    .fname,
-    .email {
-        width: 45%;
-        float: left;
-    }
-    
-     .email {
-    	padding-left: 1em;
-    	width: 55%;
-    }
-    
-    .message{
-        clear: both;
-    }
-    
-    input[type="button"]{
-         width: auto;
-    }
-}
-
-@media screen and (min-width: 50rem) {
-    
-    .fname,
-    .email {
-        width: 45%;
-        float: left;
-    }
-    
-     .email {
-    	padding-left: 1em;
-    	width: 55%;
-    }
-    
-    .message{
-        clear: both;
-    }
-    
-    input[type="button"]{
-         width: auto;
-    }
-}
-
